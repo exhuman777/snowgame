@@ -1,0 +1,76 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaeaea;
+    font-family: 'Arial', sans-serif;
+}
+
+.game-wrapper {
+    text-align: center;
+}
+
+#game-container {
+    width: 600px;
+    height: 600px;
+    border: 3px solid #333;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#player, .snowball, .snowman {
+    position: absolute;
+    font-size: 2rem; /* Adjust size of emojis */
+    text-align: center;
+    user-select: none;
+    border: 1px solid red; /* Add a red border for visibility */
+    box-sizing: border-box; /* Ensure the border is included in the width/height */
+}
+
+#player {
+    width: 50px;
+    height: 50px;
+    line-height: 50px; /* Vertically center the emoji inside the player div */
+}
+
+.snowball {
+    width: 30px;
+    height: 30px;
+    line-height: 30px; /* Vertically center the emoji inside the snowball div */
+}
+
+.snowman {
+    width: 50px;
+    height: 50px;
+    line-height: 50px; /* Vertically center the emoji inside the snowman div */
+    border-color: blue; /* Different border color for snowmen */
+}
+
+.buttons-container {
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 1rem;
+    padding: 10px 15px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
